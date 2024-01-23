@@ -1,0 +1,35 @@
+<%- include('includes/head') %>
+<%- include('includes/nav') %>
+<main>
+  <div class="main" id="main">
+    <div class="left">
+      <h1 id="cumprimento"></h1>
+      <h2 id="numero_apto"></h2>
+    </div>
+   
+  </div>
+
+  <div class="desenhos" id="desenhos">
+    <div class="botoes">
+      <button id="btn1" onclick="changePDF('/frontend/assets/css/pdf/PROJETODEARQ.pdf')">Arquitetura</button>
+      <button id="btn2" onclick="changePDF('/frontend/assets/css/pdf/PROJETODEELETRICA.pdf')">Elétrica</button>
+      <button id="btn3" onclick="changePDF('./Conteudos/PROJETODEHID.pdf')">Hidráulica</button>
+      <button id="btn4" onclick="changePDF('./Conteudos/PROJETOCOMPLEMENTAR.pdf')">Complementares</button>
+    </div>
+    <div class="pdfViewer" id="pdfViewer" style="height: 80vh; width: 70vw;">
+      <embed id="pdfEmbed" src="/frontend/assets/css/pdf/PROJETODEARQ.pdf" type="application/pdf" width="100%" height="100%">
+  </div>
+  
+    <div class="mapa" id="mapa">
+        <div id="mapaGoogle"></div>
+    </div>
+</main>
+
+<footer class="infos" id="infos">
+
+      <h3>Informações</h3>
+      <p>Endereço</p>
+      <p></p>
+</footer>
+
+<%- include('includes/footer') %>

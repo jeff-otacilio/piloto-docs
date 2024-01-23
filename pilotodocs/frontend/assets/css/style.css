@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+}
+
+/* Login */
+
+#telaLogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('./img/DUO_Uberlândia-MG__3_.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  color: #f2f2f2;
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #f2f2f2;
+  backdrop-filter: blur(50px);
+  border-radius: 20px;
+  font-size: 16px;
+  color: #f2f2f2;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+  color: #f2f2f2;
+}
+
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+  accent-color: #f2f2f2;
+  margin-right: 3px;
+}
+
+.remember-forgot a{
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover{
+  text-decoration: none;
+}
+
+.wrapper .btn{
+  width: 100%;
+  height: 45px;
+  background: #f2f2f2;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+
+.wrapper .btn:hover{
+  color: #f2f2f2;
+  background-color: #056CF2;
+  transition: all 0.2s ease;
+}
+
+.piloto{
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.piloto a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.piloto a:hover{
+  text-decoration: none;
+  color: #056CF2;
+}
+
+
+/* Login */
+
+a{
+  text-decoration: none;
+  color: #030F26;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s linear;
+}
+a:hover{
+  color:#0540F2;
+  border-bottom: 2px solid #0540F2;
+}
+
+#logoDocs{
+  border-bottom: none;
+}
+
+li{
+  list-style: none;
+}
+
+nav{
+  z-index: 1;
+  background-color: #f2f2f2b0;
+  backdrop-filter: blur(70px);
+  position: sticky;
+  top: 0;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo,
+footer .logo{
+  display: flex;
+  align-items: center;
+}
+
+nav .logo a,
+footer .logo a{
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav .logo img,
+footer .logo img{
+  width: 80px;
+  height: 70px;
+}
+
+nav ul,
+footer .top ul{
+  display: flex;
+  gap: 40px;
+}
+
+nav button{
+  color: #1c1e53;
+  background-color: transparent;
+  padding: 12px 16px;
+  border-radius: 5px;
+  border: 1px solid #030F26;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover{
+  background-color: #056CF2;
+  border-color: #056CF2;
+  color: #F2F2F2;
+}
+
+nav button#menuButton{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  padding: 7px;
+}
+
+.main{
+  display: flex;
+  padding: 10%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 100vh;
+  background: url('./img/DUO_Uberlândia-MG__3_.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.desenhos{
+  background: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.botoes{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.botoes button{
+  font-size: 16px;
+  color: #1c1e53;
+  background-color: #F2F2F2;
+  padding: 12px 16px;
+  border-radius: 5px;
+  border: 1px solid #030F26;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px;
+  text-align: center;
+}
+
+.botoes button:hover{
+  background-color: #0540F2;
+  border-color: #056CF2;
+  color: #F2F2F2;
+}
+
+.botoes button.clicked {
+  background-color: #056CF2;
+  border-color: #056CF2;
+  color: #F2F2F2;
+}
+
+.mapa{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#mapaGoogle{
+  height: 80vh;
+  width: 70vw;
+}
+
+footer{
+  background: #056CF2;
+  padding: 40px;
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+  nav button{
+    display: none;
+  }
+
+  nav ul{
+    gap: 20px;
+  }
+
+  nav ul li a{
+    font-size: 15px;
+  }
+
+  .main{
+    flex-direction: column;
+  }
+  
+}
